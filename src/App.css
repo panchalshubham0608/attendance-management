@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{font-family: 'Libre Baskerville', serif !important;}
+html, body{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+#baseDiv{
+    background: white;
+}
+body, ul{
+    margin-top: 0;
+}
+
+
+.MuiContainer-root{
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+}
+
+._loading_overlay_wrapper{
+    height: 100vh !important;
+}
+table{
+    white-space: nowrap !important;
+}
+input.mousetrap{
+    height: 100%;
+    width: 100%;
+}
+td.selected{
+    border: 2px solid black;
+}
+.MuiTablePagination-toolbar{
+    padding-right: 0px;
+    overflow-x: hidden;
+}
