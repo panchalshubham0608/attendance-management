@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/attendance-management/static/css/main.b40347f8.chunk.css",
-    "main.js": "/attendance-management/static/js/main.9a93cc93.chunk.js",
-    "main.js.map": "/attendance-management/static/js/main.9a93cc93.chunk.js.map",
+    "main.js": "/attendance-management/static/js/main.d82e0874.chunk.js",
+    "main.js.map": "/attendance-management/static/js/main.d82e0874.chunk.js.map",
     "runtime-main.js": "/attendance-management/static/js/runtime-main.6f7cde96.js",
     "runtime-main.js.map": "/attendance-management/static/js/runtime-main.6f7cde96.js.map",
-    "static/js/2.d3d27990.chunk.js": "/attendance-management/static/js/2.d3d27990.chunk.js",
-    "static/js/2.d3d27990.chunk.js.map": "/attendance-management/static/js/2.d3d27990.chunk.js.map",
+    "static/js/2.9c048b07.chunk.js": "/attendance-management/static/js/2.9c048b07.chunk.js",
+    "static/js/2.9c048b07.chunk.js.map": "/attendance-management/static/js/2.9c048b07.chunk.js.map",
     "index.html": "/attendance-management/index.html",
     "static/css/main.b40347f8.chunk.css.map": "/attendance-management/static/css/main.b40347f8.chunk.css.map",
-    "static/js/2.d3d27990.chunk.js.LICENSE.txt": "/attendance-management/static/js/2.d3d27990.chunk.js.LICENSE.txt",
+    "static/js/2.9c048b07.chunk.js.LICENSE.txt": "/attendance-management/static/js/2.9c048b07.chunk.js.LICENSE.txt",
     "static/media/404.fa1a6217.gif": "/attendance-management/static/media/404.fa1a6217.gif",
     "static/media/brand.2d6d0d51.png": "/attendance-management/static/media/brand.2d6d0d51.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6f7cde96.js",
-    "static/js/2.d3d27990.chunk.js",
+    "static/js/2.9c048b07.chunk.js",
     "static/css/main.b40347f8.chunk.css",
-    "static/js/main.9a93cc93.chunk.js"
+    "static/js/main.d82e0874.chunk.js"
   ]
 }
