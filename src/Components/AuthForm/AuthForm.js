@@ -118,7 +118,7 @@ export default function AuthForm(props) {
             if (data.error) {
                 setError(data.error);
             } else {
-                localStorage.setItem('_auth', encrypt(data.user._id));
+                localStorage.setItem('data', encrypt(data));
                 setSuccess(`You are successfully logged in!`);
                 setRedirect(<Redirect to="/dashboard" />)
             }

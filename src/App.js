@@ -7,13 +7,19 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import NotFound from './Components/NotFound/NotFound';
 import './App.css';
 
+// checks if user has a token
+function hasToken() {
+  // check if local-storage contains token
+  return (localStorage.getItem('data') != null);
+}
+
 // public route - only available to non-authenticated users
 const PublicRoute = ({component : Component, ...rest}) => {
   return (
   <Route {...rest} render={
     function(props){
       let merged = {...props, ...rest};
-      return ( localStorage.getItem('_auth') == null ? 
+      return ( !hasToken() ? 
         <Component {...merged} /> : 
         <Redirect to={{pathname: '/dashboard', state: {from: props.location}}} />
       );
@@ -27,7 +33,7 @@ const PrivateRoute = ({component : Component, ...rest}) => {
   <Route {...rest} render={
     function(props){
       let merged = {...props, ...rest};
-      return ( localStorage.getItem('_auth') != null ? 
+      return ( hasToken() ? 
         <Component {...merged} /> : 
         <Redirect to={{pathname: '/login', state: {from: props.location}}} />
       );
