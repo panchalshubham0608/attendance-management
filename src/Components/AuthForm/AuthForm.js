@@ -188,15 +188,15 @@ export default function AuthForm(props) {
                 </Button>
                 <Grid container>
                     <Grid item xs>
-                        {!register && <Link href="/forgot-password" variant="body2">Forgot password?</Link>}
+                        {!register && <Link to="/forgot-password" variant="body2">Forgot password?</Link>}
                     </Grid>
                     <Grid item>
-                        <Link href={register ? "/login" : "/register"} variant="body2">
+                        <Link to={register ? "/login" : "/register"} variant="body2">
                             {register ? "Already have an account? Sign In" : "Don't have an account? Sign Up"}
                         </Link>
                     </Grid>
                 </Grid>
-                <div style={{"height": "10px"}} />
+                <d style={{"height": "10px"}} />
             </form>
         </div>
         </Container>  

@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
+import {HashRouter, Route, Switch, Redirect} from 'react-router-dom';
 import Homepage from './Components/Homepage/Homepage';
 import AuthForm from './Components/AuthForm/AuthForm';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
@@ -37,7 +37,7 @@ const PrivateRoute = ({component : Component, ...rest}) => {
 function App() {
   return (
     <div id="baseDiv">
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <PublicRoute exact path="/" component={Homepage} />
           <PublicRoute exact path="/login" component={AuthForm} register={false}/>
@@ -46,7 +46,7 @@ function App() {
           <PublicRoute exact path="/reset-password/:tokenId" component={ForgotPassword} reset={true}/>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
