@@ -4,6 +4,7 @@ import Homepage from './Components/Homepage/Homepage';
 import AuthForm from './Components/AuthForm/AuthForm';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import Dashboard from './Components/Dashboard/Dashboard';
+import NotFound from './Components/NotFound/NotFound';
 import './App.css';
 
 // public route - only available to non-authenticated users
@@ -34,10 +35,11 @@ const PrivateRoute = ({component : Component, ...rest}) => {
   }/>);
 };
 
+// functional component
 function App() {
   return (
     <div id="baseDiv">
-      <HashRouter>
+      <HashRouter basename="/">
         <Switch>
           <PublicRoute exact path="/" component={Homepage} />
           <PublicRoute exact path="/login" component={AuthForm} register={false}/>
@@ -45,6 +47,7 @@ function App() {
           <PublicRoute exact path="/forgot-password" component={ForgotPassword} reset={false}/>
           <PublicRoute exact path="/reset-password/:tokenId" component={ForgotPassword} reset={true}/>
           <PrivateRoute exact path="/dashboard" component={Dashboard} />
+          <Route path="/" component={NotFound} />
         </Switch>
       </HashRouter>
     </div>
